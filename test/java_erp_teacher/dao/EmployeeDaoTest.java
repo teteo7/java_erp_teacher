@@ -6,14 +6,16 @@ import java.util.ArrayList;
 
 import org.junit.After;
 import org.junit.Assert;
+import org.junit.FixMethodOrder;
 import org.junit.Test;
+import org.junit.runners.MethodSorters;
 
 import java_erp_teacher.dao.impl.EmployeeDaoImpl;
 import java_erp_teacher.dto.Department;
 import java_erp_teacher.dto.Employee;
 import java_erp_teacher.dto.Title;
 
-
+@FixMethodOrder(MethodSorters.NAME_ASCENDING)
 public class EmployeeDaoTest {
 	private EmployeeDao dao= EmployeeDaoImpl.getInstance();
 
