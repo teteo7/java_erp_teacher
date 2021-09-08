@@ -41,7 +41,7 @@ public class EmployeeDaoTest {
 	}
 //////////////////////////////////////////////
 	@Test
-	public void test01InsertDepartment() {
+	public void test01InsertEmployee() {
 		System.out.println("test01InsertEMployee()");
 		Employee newEmp= new Employee(1010, "신혜리", null, null, 2500000, null);
 		int res = dao.insertEmployee(newEmp);
@@ -50,7 +50,7 @@ public class EmployeeDaoTest {
 	}
 	
 	@Test
-	public void test02InsertDepartment() {
+	public void test02InsertEmployee() {
 		System.out.println("test02InsertEMployee()");
 		Title title = new Title(2);
 		Employee newEmp = new Employee(1011, "신혜리1", title, null, 2500000, null);
@@ -60,7 +60,7 @@ public class EmployeeDaoTest {
 	}
 	
 	@Test
-	public void test03InsertDepartment() {
+	public void test03InsertEmployee() {
 		System.out.println("test03InsertEMployee()");
 		Title title = new Title(2);
 		Employee manager = new Employee(4377);
@@ -71,7 +71,7 @@ public class EmployeeDaoTest {
 	}
 	
 	@Test
-	public void test04InsertDepartment() {
+	public void test04InsertEmployee() {
 		System.out.println("test04InsertEMployee()");
 		Title title = new Title(2);
 		Employee manager = new Employee(4377);
