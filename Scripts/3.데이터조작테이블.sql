@@ -1,5 +1,6 @@
 -- title
 insert into title values(1, '사장');
+insert into title values(2, '부장');
 
 -- department
 insert into department values (1, '기획', 10);
@@ -20,8 +21,16 @@ update employee
    set empname = '권민성', title = 1, manager =null,salary =3000000,dno = 1
  where empno =1004;
 
+-- Trade
+insert into Trade values(1, "클라우드", "박태환", 010-9999-9999, "서울 관악구 관악로 145 봉천동");
+
+
+
+
+
+
+desc Trade;
 select deptno, deptname, floor from department;
 select * from employee;
 select tno, tname from title;
-
 desc employee;

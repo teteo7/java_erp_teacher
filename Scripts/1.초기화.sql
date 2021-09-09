@@ -1,9 +1,3 @@
--- 내 스키마
-DROP SCHEMA IF EXISTS java_erp;
-
--- 내 스키마
-CREATE SCHEMA java_erp;
-
 -- 직책
 CREATE TABLE java_erp.title (
 	tno   INTEGER     NOT NULL COMMENT '직책번호', -- 직책번호
@@ -49,6 +43,23 @@ ALTER TABLE java_erp.employee
 	ADD CONSTRAINT PK_employee -- 사원 기본키
 		PRIMARY KEY (
 			empno -- 사원번호
+		);
+
+-- 거래처
+CREATE TABLE java_erp.trade (
+	code    INTEGER      NOT NULL COMMENT '코드', -- 코드
+	name    VARCHAR(50)  NULL     COMMENT '거래처명', -- 거래처명
+	repr    VARCHAR(50)  NULL     COMMENT '대표', -- 대표
+	number  INTEGER      NULL     COMMENT '전화번호', -- 전화번호
+	address VARCHAR(255) NULL     COMMENT '회사주소' -- 회사주소
+)
+COMMENT '거래처';
+
+-- 거래처
+ALTER TABLE java_erp.trade
+	ADD CONSTRAINT PK_trade -- 거래처 기본키
+		PRIMARY KEY (
+			code -- 코드
 		);
 
 -- 사원
